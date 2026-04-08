@@ -85,14 +85,6 @@ export default function ContactoPage() {
                   >
                     Instagram
                   </a>
-                  <a
-                    href={CONTACT.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-sage text-campo font-jost text-sm hover:bg-campo hover:text-white transition-all"
-                  >
-                    Facebook
-                  </a>
                 </div>
               </div>
             </div>
