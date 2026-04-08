@@ -11,7 +11,7 @@ export const CONTACT = {
   hours: "Lunes a Sábado, 9:00 – 19:00",
   instagram: "https://instagram.com/deentrecasagourmet",
   facebook: "https://facebook.com/deentrecasagourmet",
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "598XXXXXXXXX",
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5988519530",
   get whatsappLink() {
     return `https://wa.me/${this.whatsappNumber}?text=${encodeURIComponent(
       "Hola! Quiero consultar disponibilidad para un evento"
