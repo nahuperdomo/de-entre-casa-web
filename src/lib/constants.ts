@@ -5,13 +5,13 @@ export const SITE_DESCRIPTION =
   "Salón de eventos gourmet a 57km de Montevideo. Bodas, cumpleaños y eventos empresariales con cocina artesanal propia.";
 
 export const CONTACT = {
-  phone: "+5988519430",
+  phone: "+59898519430",
   email: "info@deentrecasagourmet.com.uy",
   address: "Ruta 5 km 57, Canelones, Uruguay",
   hours: "Lunes a Sábado, 9:00 – 19:00",
   instagram: "https://instagram.com/deentrecasagourmet",
   facebook: "https://facebook.com/deentrecasagourmet",
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5988519430",
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "59898519430",
   get whatsappLink() {
     return `https://wa.me/${this.whatsappNumber}?text=${encodeURIComponent(
       "Hola! Quiero consultar disponibilidad para un evento"
