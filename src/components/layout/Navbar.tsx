@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAV_LINKS, CONTACT } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -62,14 +62,12 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={CONTACT.whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/disponibilidad"
                 className="font-jost text-sm font-medium px-5 py-2 rounded-full border border-campo text-campo hover:bg-campo hover:text-white transition-all duration-300"
               >
                 Consultar fecha →
-              </a>
+              </Link>
             </div>
 
             {/* Hamburger mobile */}
@@ -126,14 +124,13 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={CONTACT.whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/disponibilidad"
+                onClick={() => setMenuOpen(false)}
                 className="font-jost text-sm font-medium px-5 py-3 rounded-full bg-campo text-white text-center mt-4"
               >
                 Consultar fecha →
-              </a>
+              </Link>
             </motion.div>
           </>
         )}

@@ -24,8 +24,15 @@ export const NAV_LINKS = [
   { label: "Gastronomía", href: "/gastronomia" },
   { label: "El salón", href: "/el-salon" },
   { label: "Galería", href: "/galeria" },
+  { label: "Disponibilidad", href: "/disponibilidad" },
   { label: "Cómo llegar", href: "/como-llegar" },
   { label: "Contacto", href: "/contacto" },
+];
+
+// Fechas reservadas/no disponibles (formato "YYYY-MM-DD")
+// Actualizá esta lista para marcar fechas ocupadas en el calendario
+export const BLOCKED_DATES: string[] = [
+  // Ejemplo: "2026-05-15", "2026-06-20"
 ];
 
 export const STATS = [
