@@ -14,7 +14,7 @@ export default function ComoLlegarPage() {
               Cómo llegar
             </h1>
             <p className="font-jost font-light text-tierra/70 max-w-2xl mx-auto">
-              Estamos a solo 57 km de Montevideo, sobre Ruta 5. Un viaje corto
+              Estamos a solo 52 km de Montevideo, sobre Ruta 1. Un viaje corto
               hacia un lugar inolvidable.
             </p>
           </div>
@@ -45,20 +45,19 @@ export default function ComoLlegarPage() {
                   <li className="flex gap-3">
                     <span className="font-playfair text-bronce font-medium">1.</span>
                     <span>
-                      Tomá Ruta 5 (Brigadier General Fructuoso Rivera) en
-                      dirección norte.
+                      Tomá Ruta 1 en dirección oeste hacia Colonia.
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="font-playfair text-bronce font-medium">2.</span>
                     <span>
-                      Continuá por Ruta 5 durante aproximadamente 50 km.
+                      Continuá por Ruta 1 durante aproximadamente 50 km.
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="font-playfair text-bronce font-medium">3.</span>
                     <span>
-                      En el km 57, buscá nuestra señalización sobre el lado
+                      En el km 52, buscá nuestra señalización sobre el lado
                       derecho.
                     </span>
                   </li>

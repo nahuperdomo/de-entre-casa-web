@@ -21,13 +21,13 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "De Entre Casa Gourmet | Salón de Eventos cerca de Montevideo",
   description:
-    "Salón de eventos gourmet a 57km de Montevideo. Bodas, cumpleaños y eventos empresariales con cocina artesanal propia.",
+    "Salón de eventos gourmet a 52km de Montevideo. Bodas, cumpleaños y eventos empresariales con cocina artesanal propia.",
   keywords:
     "salón eventos Montevideo, bodas Uruguay, eventos campo Uruguay, catering artesanal, quinceañeros Uruguay",
   openGraph: {
     title: "De Entre Casa Gourmet | Salón de Eventos cerca de Montevideo",
     description:
-      "Salón de eventos gourmet a 57km de Montevideo. Bodas, cumpleaños y eventos empresariales con cocina artesanal propia.",
+      "Salón de eventos gourmet a 52km de Montevideo. Bodas, cumpleaños y eventos empresariales con cocina artesanal propia.",
     images: ["/images/og-image.jpg"],
     type: "website",
     locale: "es_UY",

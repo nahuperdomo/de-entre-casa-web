@@ -28,7 +28,7 @@ export default function Hero() {
               {...anim(0.1)}
               className="inline-block px-4 py-1.5 rounded-full bg-sage text-campo font-jost text-xs font-medium tracking-widest uppercase"
             >
-              57 km de Montevideo · Eventos privados
+              52 km de Montevideo · Eventos privados
             </motion.span>
 
             <motion.h1
