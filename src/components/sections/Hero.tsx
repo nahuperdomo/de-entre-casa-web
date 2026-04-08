@@ -8,19 +8,24 @@ import Button from "@/components/ui/Button";
 export default function Hero() {
   const mounted = useIsMounted();
 
-  // En SSR: renderizar visible. En cliente: animar.
   const anim = (delay: number) =>
     mounted
       ? {
           initial: { opacity: 0, y: 20 },
           animate: { opacity: 1, y: 0 },
-          transition: { duration: 0.6, delay },
+          transition: { duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
         }
       : {};
 
   return (
     <section className="relative min-h-screen bg-crema overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16">
+      {/* Fondo decorativo sutil */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute top-20 right-20 w-96 h-96 rounded-full bg-bronce blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-72 h-72 rounded-full bg-campo blur-3xl" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Texto */}
           <div className="space-y-6">
@@ -41,9 +46,13 @@ export default function Hero() {
               </em>
             </motion.h1>
 
+            <motion.div {...anim(0.25)}>
+              <div className="decorative-line mt-2 mb-4" />
+            </motion.div>
+
             <motion.p
               {...anim(0.3)}
-              className="font-jost font-light text-lg text-tierra/70 max-w-lg"
+              className="font-jost font-light text-lg text-tierra/70 max-w-lg leading-relaxed"
             >
               Celebrá en un espacio único con gastronomía artesanal propia.
               Bodas, cumpleaños y eventos corporativos con sabor a campo
@@ -54,7 +63,7 @@ export default function Hero() {
               {...anim(0.4)}
               className="flex flex-wrap gap-4 pt-2"
             >
-              <Button href="/contacto">Reservar fecha</Button>
+              <Button href="/disponibilidad">Consultar fecha</Button>
               <Button variant="outline" href="/galeria">
                 Ver galería
               </Button>
@@ -69,7 +78,7 @@ export default function Hero() {
             {[1, 2, 3, 4].map((n, i) => (
               <div
                 key={n}
-                className={`relative overflow-hidden rounded-2xl ${
+                className={`relative overflow-hidden rounded-2xl shadow-lg ${
                   i === 0 ? "aspect-[3/4]" : i === 1 ? "aspect-square" : i === 2 ? "aspect-square" : "aspect-[3/4]"
                 }`}
               >
@@ -78,7 +87,7 @@ export default function Hero() {
                   alt={`De Entre Casa Gourmet - imagen ${n}`}
                   fill
                   sizes="(max-width: 768px) 50vw, 25vw"
-                  className="object-cover"
+                  className="object-cover image-hover"
                   priority={i < 2}
                 />
               </div>
