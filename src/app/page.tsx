@@ -44,7 +44,7 @@ export default function Home() {
           <p className="font-jost font-light text-crema/80 mb-8">
             Consultá disponibilidad y armemos juntos una propuesta a tu medida.
           </p>
-          <Button href="/disponibilidad" className="bg-crema text-campo hover:bg-white">
+          <Button href="/disponibilidad" className="!bg-crema !text-campo hover:!bg-white">
             Consultar fecha
           </Button>
         </div>
